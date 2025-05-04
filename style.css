@@ -1,0 +1,437 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background: #3b3b3b;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 7%;
+  }
+  
+  .proj {
+    color: #d3d3d3;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  .btn:hover {
+    background-color: #3b6c4c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+
+  
+  .contact {
+    background-color: #81ffa0;
+    color: #3b3b3b;
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding: 0.5% 1.5%;
+    border-radius: 5px;
+  }
+  
+  @font-face {
+    font-family: "KyivType";
+    src: url('fonts/KyivType fonts/Dmitry Rastvortsev - KyivType Sans Thin.otf') format('truetype');
+  }
+  @font-face {
+    font-family: "KyivBold";
+    src: url('fonts/KyivType fonts/Dmitry Rastvortsev - KyivType Sans Bold3.otf') format('truetype');
+  }
+  
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10%;
+    padding: 0;
+    color: white;
+    font-family: "KyivType", sans-serif;
+    position: relative;
+    flex-wrap: wrap;
+    
+  }
+  
+  
+ /* Enlarged image */
+.photo img {
+    height: 50ch; /* Previously 15ch */
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Widen photo area if needed */
+  .photo {
+    padding-right: 1vw;
+  }
+  
+  .content {
+    width: 60vw;
+    font-size: 3.5vw; 
+    margin-left: 8%;
+  }
+  
+  /* Name highlight adjustment */
+  .name-highlight {
+    font-family: "Stoke", serif;
+    font-weight: 600;
+    font-size: 5.5rem; /* Previously 3.8rem */
+    margin-right: 0.3rem;
+  }
+  .name{
+    margin-bottom:100px ;
+  }
+  
+  /* Comma size adjusted to match name */
+  .comma {
+    font-size: 5.5rem;
+  }
+  .tog{
+    display: flex;
+  }
+  
+  /* Bigger supporting text */
+  .yap {
+    font-size: 2.8rem; /* Increased from 2.2rem */
+    line-height: 1.6;
+    margin-top: 1rem;
+  }
+  
+  /* Optional: increase navbar size too */
+  .proj,
+  .contact {
+    font-size: 2.8rem; /* Previously 2.4rem */
+  }
+  
+  .word {
+    display: inline-block;
+    font-weight: 500;
+    color: #81ffa0;
+  }
+  
+  .art {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    transform: translate(17.5vw, 9vh);
+    z-index: -2;
+    overflow: hidden;
+  }
+  
+  .art svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  .arrow{
+    transform: rotate(120deg);
+    transform: scaleY(-1);
+  }
+  .arrow img{
+    height: 30vh;
+  }
+
+  h1{
+    font-size: 4.5rem;
+    color: white;
+    font-family: "KyivType", sans-serif;
+    text-align: center;
+  }
+  .line1{
+    width: 310px;
+    border: 2px solid #81ffa0;
+    align-items: center;
+    transform: translate(0,-48px);
+  }
+  
+  #projects{
+    display: flex;
+    color: white;
+    font-family:"Inter", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 200;
+    text-align: justify;
+    margin: 3%;
+  }
+  
+  hr{
+  width: 400px;
+  border: 0.7px solid #81ffa0;
+  align-items: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+
+}
+p{
+    margin-left: 3%;
+    width: 80%;
+  }
+  .proj1-img img{
+    height: 250px;
+  }
+  .v1{
+    border-left: 4px solid white;
+    height: 250px;
+    margin-right: 2.3%;
+    margin-left: 4%;
+  }
+
+.proj2>.v1{
+  height:380px;
+}
+.proj2-img{
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
+}
+.up{
+  display: flex;
+  justify-content: space-between;
+  gap: 4%;
+}
+.down{
+  display: flex;
+  justify-content: space-between;
+  gap: 4%;
+}
+.proj2-img img{
+  height: 20vh;
+}
+
+.proj3>.v1{
+  height: 420px;
+}
+.proj3 img{
+  height: 200px;
+}
+.proj3 a{
+  display: flex;
+    color: #81ffa0;
+    font-family:"Inter", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 200;
+    text-align: justify;
+    margin: 3%;
+}
+
+.end1 hr{
+  width: 800px;
+  border: 0.7px solid white;
+  align-items: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+  
+.contact1 h1{
+  text-align: left;
+  margin-left: 5%;
+  text-decoration: solid underline #81ffa0 4px;
+  text-underline-offset: 0.3em;
+}
+.contact1 p{
+  margin-left: 5%;
+  width: 80%;
+  font-size: 2rem;
+  font-weight: 650;
+  font-family: "KyivType", sans-serif;
+  color: white;
+  display: flex;
+}
+a{
+  margin-left: 5%;
+  width: 80%;
+  font-size: 2.5rem;
+  font-weight:1000;
+  font-family: "KyivBold", sans-serif;
+  display: flex;
+  flex-direction: row;
+  color:#81ffa0;
+  text-decoration: none;
+  text-align: left;
+}
+.contact-content a>.word{
+  margin-left: 5%;
+  width: 80%;
+  font-size: 2.5rem;
+  font-weight:1000;
+  font-family: "KyivBold", sans-serif;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+.contact-content p{
+  text-align: left;
+}
+.art2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50vw;
+    height: 100vh;
+    z-index: -2;
+    overflow: hidden;
+  }
+  
+  .art2 svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+ /* Enhanced hover effects for navbar buttons */
+
+/* Projects button hover effect */
+.proj {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.proj::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #81ffa0;
+  transition: width 0.3s ease;
+}
+
+.proj:hover {
+  color: #81ffa0;
+  transform: translateY(-3px);
+}
+
+.proj:hover::after {
+  width: 100%;
+}
+
+/* Contact button hover effect */
+.contact {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #3b3b3b;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.contact:hover {
+  color: #81ffa0;
+  box-shadow: 0 5px 15px rgba(129, 255, 160, 0.4);
+  transform: translateY(-3px);
+}
+
+.contact:hover::before {
+  left: 0;
+}
+/* Hover effects for Projects and Contact section headings */
+
+/* Projects heading hover effect */
+/* Centered Projects heading hover effect */
+
+.projects h1 {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 100%; /* Ensure the heading takes full width */
+}
+
+/* Create a pseudo-element for the animated underline */
+.projects h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  max-width: 180px; /* Match approximate width of the text */
+  height: 4px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0); /* Center the underline */
+  background-color: #81ffa0;
+  transform-origin: center;
+  transition: transform 0.4s ease;
+}
+
+.projects h1:hover {
+  color: #81ffa0;
+  transform: translateY(-3px);
+}
+
+.projects h1:hover::before {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Hide default line when we hover on projects heading */
+.projects h1:hover + .line1 {
+  opacity: 0;
+}
+
+/* Ensure the entire heading container is centered */
+.projects {
+  text-align: center;
+}
+
+/* Adjust the line1 to ensure it's properly centered below the heading */
+.line1 {
+  margin: 0 auto;
+  transform: translate(0, -48px);
+}
+
+/* Contact heading hover effect */
+.contact1 h1 {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+  text-decoration: solid underline transparent 4px;
+  text-underline-offset: 0.3em;
+}
+
+.contact1 h1::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: -10px;
+  background-color: rgba(129, 255, 160, 0.1);
+  transition: width 0.3s ease;
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.contact1 h1:hover {
+  color: #81ffa0;
+  text-decoration-color: #81ffa0;
+}
+
+.contact1 h1:hover::before {
+  width: calc(100% + 20px);
+}
